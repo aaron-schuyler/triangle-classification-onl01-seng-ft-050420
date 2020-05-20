@@ -6,7 +6,9 @@ class Triangle
     @three = three
   end 
   def kind 
-    if 
+    if @one > @two + @three || @two > @one + @three || @three > @one + @two || @one <= 0 || @two <= 0 || @three <= 0
+      begin 
+        TriangleError
   end
 end
 
