@@ -16,7 +16,7 @@ class Triangle
       :scalene
     elsif (@one == @two && @three != @one) || (@one == @three && @two != @one) || (@two == @three && @one != @three)
       :isosceles
-    elsif @one == @two && @two == @three
+    elsif @one == @two && @two == @three && @one != 0
       :equilateral
     end
   end
