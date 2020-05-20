@@ -12,7 +12,10 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    elsif 
+    elsif @one != @three && @three != @two && @one != @two
+      :scalene
+    elsif @one == @two || @one == @three || 
+      
   end
 end
 
