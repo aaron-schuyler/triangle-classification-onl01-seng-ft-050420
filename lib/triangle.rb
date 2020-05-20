@@ -20,10 +20,10 @@ class Triangle
       :equilateral
     end
   end
-end
-
-class TriangleError < StandardError
+  class TriangleError < StandardError
   def message
     "There was an error with your triangle."
   end
 end
+end
+
