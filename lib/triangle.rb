@@ -8,8 +8,8 @@ class Triangle
   def kind 
     if @one > @two + @three || @two > @one + @three || @three > @one + @two || @one <= 0 || @two <= 0 || @three <= 0
       begin
-        raise TriangleError
-      rescue TriangleError => error
+        raise Triangle::TriangleError
+      rescue Triangle::TriangleError => error
           puts error.message
       end
     elsif @one != @three && @three != @two && @one != @two
