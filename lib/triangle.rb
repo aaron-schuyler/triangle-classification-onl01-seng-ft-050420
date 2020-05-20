@@ -14,7 +14,7 @@ class Triangle
       end
     elsif @one != @three && @three != @two && @one != @two
       :scalene
-    elsif @one == @two || @one == @three || 
+    elsif (@one == @two && @three != @one) || (@one == @three && @two != @one) || @two == @three 
       
   end
 end
