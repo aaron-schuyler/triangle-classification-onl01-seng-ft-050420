@@ -7,11 +7,17 @@ class Triangle
   end 
   def kind 
     if @one > @two + @three || @two > @one + @three || @three > @one + @two || @one <= 0 || @two <= 0 || @three <= 0
-      begin 
-        TriangleError
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
+    elsif 
   end
 end
 
 def TriangleError < StandardError
-  
+  def message
+    "There was an error with your triangle."
+  end
 end
